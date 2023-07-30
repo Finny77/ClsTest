@@ -66,7 +66,7 @@
 						
 						<h2>Are you a passionate book lover in search of your next literary adventure? Look no further!</h2>
 						<p>
-							<a href="#" class="btn btn-primary btn-lg btn-hardbound">Buy Hard Bound <span class="price">$12.99</span></a> <span class="fh5co-block">&nbsp;&nbsp;
+							<a href="#" id="whatsapp-btn" class="btn btn-primary btn-lg btn-hardbound">Buy Hard Bound <span class="price">$12.99</span></a> <span class="fh5co-block">&nbsp;&nbsp;
 							or &nbsp;&nbsp;</span> <a href="#" class="btn-ebook">Buy the eBook</a>
 						</p>
 					</div>
@@ -376,6 +376,19 @@
 
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
+	<script>
+		// jQuery code
+$(document).ready(function() {
+  // Replace '1234567890' with the desired phone number
+  var phoneNumber = '+917395975761';
+
+  $('#whatsapp-btn').on('click', function() {
+    // Open WhatsApp in a new window with the specified phone number
+    window.open('https://api.whatsapp.com/send?phone=' + phoneNumber, '_blank');
+  });
+});
+
+		</script>
 
 	</body>
 </html>
